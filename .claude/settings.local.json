@@ -1,0 +1,16 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm init *)",
+      "Bash(brew list *)",
+      "Read(//usr/local/bin/**)",
+      "Read(//opt/homebrew/bin/**)",
+      "Read(//Users/zero/.nvm/versions/**)",
+      "Bash(command -v node)",
+      "Bash(mkdir -p /Users/zero/.claude/projects/-Users-zero-Documents-Projects-url-shortener/memory)"
+    ],
+    "additionalDirectories": [
+      "/Users/zero/.claude/projects/-Users-zero-Documents-Projects-url-shortener/memory"
+    ]
+  }
+}
