@@ -6,7 +6,7 @@ const app = express();
 app.use(express.json());
 
 // POST /shorten  — create a short URL
-app.post('/shorten', async (req, res) => {
+app.post('/short', async (req, res) => {
   const { url } = req.body;
 
   if (!url) {
