@@ -5,6 +5,17 @@ const db = require('./db');
 const app = express();
 app.use(express.json());
 
+app.get('/', async (req, res) => {
+  const { shortCode } = req.params;
+
+  try {
+    res.send({"message":"Welcome to the URL Shortener API! Use POST /short to create a short URL."});
+  } catch (err) {
+    console.error(err);
+    return res.status(500).json({ error: 'internal server error' });
+  }
+});
+
 // POST /shorten  — create a short URL
 app.post('/short', async (req, res) => {
   const { url } = req.body;
