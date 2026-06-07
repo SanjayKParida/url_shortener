@@ -9,7 +9,7 @@ app.get('/', async (req, res) => {
   const { shortCode } = req.params;
 
   try {
-    res.send({"message":"Welcome to the URL Shortener API! Use POST /short to create a short URL."});
+    res.send({"message":"Fuck you bitch"});
   } catch (err) {
     console.error(err);
     return res.status(500).json({ error: 'internal server error' });
