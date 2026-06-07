@@ -9,7 +9,7 @@ app.get('/', async (req, res) => {
   const { shortCode } = req.params;
 
   try {
-    res.send({"message":"Fuck you bitch"});
+    res.send({"message":"Fuck you bitch anish"});
   } catch (err) {
     console.error(err);
     return res.status(500).json({ error: 'internal server error' });
